@@ -1,0 +1,44 @@
+/*working*/
+.working {
+  padding: 70px 100px;
+  background: var(--light-pink);
+  text-align: center;
+}
+.working-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.working > .working-inner > div {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  padding: 25px 15px;
+  margin: 15px 0;
+  border-radius: 15px;
+}
+.working-step {
+  background: var(--white);
+  color: var(--black);
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  border-radius: 25px;
+  display: grid;
+  place-items: center;
+}
+.working > .working-inner > div:hover {
+  transition: all 0.2ms ease-in-out;
+  box-shadow: 0px 2px 8px var(--dark-gray);
+}
+@media only screen and (max-width: 768px) {
+  .working {
+    padding: 30px 15px;
+  }
+  .working > .working-inner > div {
+    padding: 12px;
+    margin: 0;
+  }
+}

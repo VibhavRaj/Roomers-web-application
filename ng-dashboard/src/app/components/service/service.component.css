@@ -1,0 +1,27 @@
+/*service*/
+.service {
+  background: var(--light-blue);
+  text-align: center;
+  padding: 70px 50px 50px 50px;
+}
+.service ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.service ul li {
+  flex: 1 1 200px; /*  Stretching: */
+  margin: 30px 5px 5px 5px;
+  list-style: none;
+}
+.service ul li i {
+  font-size: 36px;
+  color: var(--dark-green);
+  padding: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+  .service {
+    padding: 30px 15px;
+  }
+}

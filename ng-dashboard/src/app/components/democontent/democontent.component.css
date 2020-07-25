@@ -1,0 +1,23 @@
+/*demo-content*/
+.demo-content {
+  padding: 40px 100px;
+  background: var(--dark-white);
+}
+.demo-content > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 0;
+}
+.demo-content > div:last-child {
+  border-top: 1px solid var(--dark-gray);
+}
+.demo-content > div h2,
+.demo-content > div span {
+  flex: 1 1 250px;
+}
+@media only screen and (max-width: 768px) {
+  .demo-content {
+    padding: 30px 15px;
+  }
+}

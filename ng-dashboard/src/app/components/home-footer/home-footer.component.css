@@ -1,0 +1,29 @@
+/*home-footer*/
+.home-footer {
+  background: var(--black);
+  border-top: 1px solid var(--dark-gray);
+  padding: 20px 100px;
+}
+.home-footer div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 0;
+}
+.home-footer div > span {
+  flex: 1 1 200px; /*  Stretching: */
+  margin: 5px;
+}
+.home-footer ul li {
+  list-style: none;
+}
+.home-footer h3,
+.home-footer h4 {
+  color: var(--white) !important;
+  opacity: 0.8;
+}
+@media only screen and (max-width: 768px) {
+  .home-footer {
+    padding: 30px 15px;
+  }
+}

@@ -1,0 +1,35 @@
+<section class="banner">
+  <div class="nav">
+    <h3 nz-typography>LOGO</h3>
+    <span class="spacer"></span>
+    <span>
+      <button
+        class="menu-button"
+        nz-dropdown
+        [nzDropdownMenu]="menu"
+        [nzPlacement]="listOfPosition"
+      >
+        MENU
+      </button>
+      <nz-dropdown-menu #menu="nzDropdownMenu">
+        <ul nz-menu>
+          <li nz-menu-item>For Tenants</li>
+          <li nz-menu-item>For Landlords</li>
+          <li nz-menu-item>For Agents</li>
+          <li nz-menu-item>Search Properties</li>
+          <li nz-menu-item>FAQ</li>
+          <li nz-menu-item>Login</li>
+          <li nz-menu-item>Join</li>
+        </ul>
+      </nz-dropdown-menu>
+    </span>
+  </div>
+  <div class="banner-content">
+    <h1 nz-typography>
+      Close leases faster get free referencing and save rentors money.
+    </h1>
+    <button class="button">Signup for Patch</button>
+  </div>
+  <div class="none"></div>
+</section>
+<!-- <h1>Banner</h1> -->

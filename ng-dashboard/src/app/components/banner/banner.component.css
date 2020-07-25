@@ -1,0 +1,51 @@
+/*Nav*/
+.nav {
+  display: flex;
+  align-items: baseline;
+}
+[nz-menu-item]:hover {
+  background: var(--green);
+  color: var(--dark-green);
+}
+.menu-button {
+  font-size: 16px;
+  padding: 4px 16px;
+  background: var(--white);
+  border: none;
+  border-radius: 3px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+/*Banner*/
+.banner {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../../../assets/img/girl1.jpg");
+  background-size: cover;
+  background-position: top;
+  height: 110%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 100px;
+}
+.banner-content {
+  width: 400px;
+}
+.banner h1 {
+  color: var(--dark-gray) !important;
+}
+@media only screen and (max-width: 768px) {
+  .banner {
+    padding: 30px 15px;
+    height: 80%;
+  }
+  .none {
+    display: none;
+  }
+  .banner-content {
+    width: auto;
+  }
+}

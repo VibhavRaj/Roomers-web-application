@@ -1,0 +1,24 @@
+<section class="questions">
+  <h1 nz-typography>Frequently Asked Questions</h1>
+  <nz-collapse [nzBordered]="false" id="collapse">
+    <nz-collapse-panel
+      #p
+      *ngFor="let panel of panels; let isFirst = expandedIcon"
+      [nzHeader]="panel.name"
+      [nzActive]="panel.active"
+      [ngStyle]="panel.customStyle"
+      [nzExpandedIcon]="isFirst"
+    >
+      <p>{{ panel.content }}</p>
+      <ng-template #expandedIcon let-active>
+        {{ active }}
+        <i
+          nz-icon
+          nzType="caret-right"
+          class="ant-collapse-arrow"
+          [nzRotate]="p.nzActive ? 90 : -90"
+        ></i>
+      </ng-template>
+    </nz-collapse-panel>
+  </nz-collapse>
+</section>

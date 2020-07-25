@@ -1,0 +1,40 @@
+/*home-middle-banner*/
+.home-middle-banner {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../../../assets/img/woman.jpg");
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 100px;
+  height: 100%;
+}
+.middle-content {
+  width: 350px;
+  /* flex: 1 0 250px; */
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 255, 255, 0.9),
+    rgb(255, 255, 255, 0.9)
+  );
+  padding: 30px;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .home-middle-banner {
+    padding: 30px 15px;
+    height: auto;
+  }
+  .middle-content {
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.65),
+      rgba(255, 255, 255, 0.7)
+    );
+  }
+}

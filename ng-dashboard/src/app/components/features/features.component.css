@@ -1,0 +1,17 @@
+/*Features*/
+.features {
+  padding: 70px 100px;
+  background: var(--light-pink);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.inner_feature {
+  flex: 1 1 300px;
+}
+@media only screen and (max-width: 768px) {
+  .features {
+    padding: 30px 15px;
+  }
+}
