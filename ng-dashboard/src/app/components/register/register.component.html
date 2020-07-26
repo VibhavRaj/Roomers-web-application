@@ -1,1 +1,51 @@
-<p>register works!</p>
+<section class="demo-banner">
+  <h2 nz-typography>Register</h2>
+  <form>
+    <nz-input-group [nzSuffix]="userName" nzSize="large">
+      <input type="text" nz-input placeholder="Enter your name" />
+    </nz-input-group>
+    <ng-template #userName>
+      <i nz-icon [nzType]="'home'"></i>
+    </ng-template>
+    <br />
+    <br />
+    <nz-input-group [nzSuffix]="userEmail" nzSize="large">
+      <input type="text" nz-input placeholder="Enter your email" />
+    </nz-input-group>
+    <ng-template #userEmail>
+      <i nz-icon [nzType]="'home'"></i>
+    </ng-template>
+    <br />
+    <br />
+    <nz-input-group [nzSuffix]="userPhoneNumber" nzSize="large">
+      <input type="text" nz-input placeholder="Enter your phone number" />
+    </nz-input-group>
+    <ng-template #userPhoneNumber>
+      <i nz-icon [nzType]="'home'"></i>
+    </ng-template>
+    <br />
+    <br />
+    <nz-input-group [nzSuffix]="userPassword" nzSize="large">
+      <input
+        [type]="passwordVisible ? 'text' : 'password'"
+        nz-input
+        placeholder="Enter password here"
+      />
+    </nz-input-group>
+    <ng-template #userPassword>
+      <i
+        nz-icon
+        [nzType]="passwordVisible ? 'eye-invisible' : 'eye'"
+        (click)="passwordVisible = !passwordVisible"
+      ></i>
+    </ng-template>
+  </form>
+  <div *nzModalFooter class="data">
+    <button class="button" (click)="destroyModal()">
+      Cancel
+    </button>
+    <button type="button" class="button" (click)="destroyModal()">
+      Submit
+    </button>
+  </div>
+</section>

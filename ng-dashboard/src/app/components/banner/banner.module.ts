@@ -8,6 +8,7 @@ import { NzModalModule } from "ng-zorro-antd/modal";
 import { BannerComponent } from "./banner.component";
 import { LoginComponent } from "../login/login.component";
 import { HttpClientModule } from "@angular/common/http";
+import { RegisterComponent } from "../register/register.component";
 registerLocaleData(en);
 @NgModule({
   imports: [
@@ -19,9 +20,9 @@ registerLocaleData(en);
     ReactiveFormsModule,
     HttpClientModule,
   ],
-  declarations: [BannerComponent, LoginComponent],
+  declarations: [BannerComponent, LoginComponent, RegisterComponent],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
-  entryComponents: [LoginComponent],
+  entryComponents: [LoginComponent, RegisterComponent],
   exports: [BannerComponent],
 })
 export class BannerModule {}
