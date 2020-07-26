@@ -1,0 +1,7 @@
+[nz-input]:hover {
+  border: 1px solid var(--light-black) !important;
+}
+[nz-input]:focus {
+  border: 1px solid var(--light-black) !important;
+  box-shadow: none !important;
+}
