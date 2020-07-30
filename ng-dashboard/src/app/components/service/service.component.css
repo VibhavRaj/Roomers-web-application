@@ -13,9 +13,10 @@
   flex: 1 1 200px; /*  Stretching: */
   margin: 30px 5px 5px 5px;
   list-style: none;
+  font-size: 20px;
 }
 .service ul li i {
-  font-size: 36px;
+  font-size: 40px;
   color: var(--dark-green);
   padding: 8px;
 }

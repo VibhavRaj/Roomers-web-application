@@ -17,10 +17,13 @@
 .home-footer ul li {
   list-style: none;
 }
-.home-footer h3,
-.home-footer h4 {
-  color: var(--white) !important;
-  opacity: 0.8;
+.home-footer ul li:hover {
+  color: var(--dark-gray);
+}
+.home-footer h4,
+.home-footer h5 {
+  color: var(--dark-gray) !important;
+  opacity: 0.9;
 }
 @media only screen and (max-width: 768px) {
   .home-footer {
