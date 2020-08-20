@@ -16,6 +16,7 @@
 }
 .home-footer ul li {
   list-style: none;
+  padding: 5px 0;
 }
 .home-footer ul li:hover {
   color: var(--dark-gray);

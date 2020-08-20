@@ -109,6 +109,11 @@ a {
   color: var(--dark-white);
   border: 1px solid var(--dark-black);
 }
+.but-white {
+  background: var(--dark-white);
+  color: var(--light-black);
+  border: 1px solid var(--dark-gray);
+}
 .button:focus {
   outline: none;
   opacity: 0.9;

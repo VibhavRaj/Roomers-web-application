@@ -9,7 +9,7 @@
 }
 .menu-button {
   font-size: 16px;
-  padding: 4px 16px;
+  padding: 5px 16px 4px 16px;
   background: var(--white);
   border: none;
   border-radius: 3px;

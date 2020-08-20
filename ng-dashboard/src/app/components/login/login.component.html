@@ -1,5 +1,5 @@
 <section class="demo-banner">
-  <h2 nz-typography>Login</h2>
+  <h4>Sign in to your account</h4>
   <form>
     <nz-input-group [nzSuffix]="prefixTemplateUser" nzSize="large">
       <input type="text" nz-input placeholder="Enter your username" />
@@ -25,10 +25,14 @@
     </ng-template>
   </form>
   <div *nzModalFooter class="data">
-    <button class="button" (click)="destroyModal()">
+    <button class="button but-sm but-white" (click)="destroyModal()">
       Cancel
     </button>
-    <button type="button" class="button" (click)="destroyModal()">
+    <button
+      type="button "
+      class="button but-sm but-green"
+      (click)="destroyModal()"
+    >
       Submit
     </button>
   </div>
