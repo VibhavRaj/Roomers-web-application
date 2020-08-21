@@ -1,34 +1,42 @@
-<section class="banner">
-  <div class="nav">
-    <h3 nz-typography>roomersdekho</h3>
-    <span class="spacer"></span>
-    <span>
-      <button
-        class="menu-button"
-        nz-dropdown
-        [nzDropdownMenu]="menu"
-        [nzPlacement]="listOfPosition"
-      >
-        MENU
-      </button>
-      <nz-dropdown-menu #menu="nzDropdownMenu">
-        <ul nz-menu>
-          <li nz-menu-item>For Tenants</li>
-          <li nz-menu-item>For Landlords</li>
-          <li nz-menu-item>For Agents</li>
-          <li nz-menu-item>Search Properties</li>
-          <li nz-menu-item>FAQ</li>
-          <li nz-menu-item (click)="login()">Login</li>
-          <li nz-menu-item (click)="register()">Join</li>
-        </ul>
-      </nz-dropdown-menu>
-    </span>
+<div class="nav">
+  <h5>Roomers</h5>
+  <span class="spacer"></span>
+  <div class="mobile-menu">
+    <button
+      class="menu-button"
+      nz-dropdown
+      [nzDropdownMenu]="menu"
+      [nzPlacement]="listOfPosition"
+    >
+      MENU
+    </button>
+    <nz-dropdown-menu #menu="nzDropdownMenu">
+      <ul nz-menu>
+        <li nz-menu-item>For Tenants</li>
+        <li nz-menu-item>For Landlords</li>
+        <li nz-menu-item>For Agents</li>
+        <li nz-menu-item>Search Properties</li>
+        <li nz-menu-item>FAQ</li>
+        <li nz-menu-item (click)="login()">Login</li>
+        <li nz-menu-item (click)="register()">Join</li>
+      </ul>
+    </nz-dropdown-menu>
   </div>
+  <ul nz-menu nzMode="horizontal" class="desktop-menu">
+    <li nz-menu-item>For Tenants</li>
+    <li nz-menu-item>For Landlords</li>
+    <li nz-menu-item>For Agents</li>
+    <li nz-menu-item>Search Properties</li>
+    <li nz-menu-item>FAQ</li>
+    <li nz-menu-item (click)="login()">Login</li>
+    <li nz-menu-item (click)="register()">Join</li>
+  </ul>
+</div>
+<section class="banner">
   <div class="banner-content">
     <h1>
       Close leases faster get free referencing and save rentors money.
     </h1>
     <button class="button but-lg but-green">Signup for Patch</button>
   </div>
-  <div class="none"></div>
 </section>
