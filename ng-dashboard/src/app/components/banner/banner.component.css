@@ -7,10 +7,11 @@
 }
 [nz-menu] {
   border: none;
-  display: block !important;
 }
 [nz-menu-item] {
+  height: 100% !important;
   font-weight: 400;
+  padding: 10px 20px !important;
 }
 .feather {
   width: 24px;
@@ -23,14 +24,13 @@
   color: var(--dark-black);
 }
 [nz-menu-item]:focus {
-  border-right: none;
   color: var(--dark-green);
 }
 [nz-menu-item]:hover,
 [nz-menu-item]:focus {
-  background: var(--green);
+  background: var(--light-green);
   color: var(--dark-black);
-  border-bottom: 2px solid var(--dark-green);
+  border-bottom: 2px solid var(--dark-green) !important;
 }
 .menu-button {
   padding: 5px 10px;
@@ -64,7 +64,7 @@
   padding: 0 100px;
 }
 .banner-content {
-  width: 450px;
+  width: auto;
 }
 .banner h1 {
   color: var(--dark-gray) !important;
@@ -74,6 +74,9 @@
 }
 .desktop-menu {
   display: block;
+}
+.logo {
+  margin: 8px 0;
 }
 @media only screen and (max-width: 968px) {
   .mobile-menu {
