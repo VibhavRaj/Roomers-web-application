@@ -27,7 +27,8 @@
   color: var(--dark-green);
 }
 [nz-menu-item]:hover,
-[nz-menu-item]:focus {
+[nz-menu-item]:focus,
+[nz-menu-item]:active {
   background: var(--light-green);
   color: var(--dark-black);
   border-bottom: 2px solid var(--dark-green) !important;
