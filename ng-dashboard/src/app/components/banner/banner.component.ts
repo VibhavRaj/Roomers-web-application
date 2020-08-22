@@ -1,8 +1,6 @@
 import { Component, OnInit, AfterViewInit } from "@angular/core";
 import { NzModalService } from "ng-zorro-antd/modal";
 import { NzPlacementType } from "ng-zorro-antd/dropdown";
-import { LoginComponent } from "../login/login.component";
-import { RegisterComponent } from "../register/register.component";
 import * as Feather from "feather-icons";
 @Component({
   selector: "app-banner",
@@ -23,7 +21,8 @@ export class BannerComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     Feather.replace();
   }
-  login() {
+  async login() {
+    const { LoginComponent } = await import("../login/login.component");
     this.modalService.create({
       nzWidth: "350px",
       nzBodyStyle: this.modalStyle,
@@ -33,7 +32,10 @@ export class BannerComponent implements OnInit, AfterViewInit {
     });
     console.log("Log");
   }
-  register() {
+  async register() {
+    const { RegisterComponent } = await import(
+      "../register/register.component"
+    );
     this.modalService.create({
       nzWidth: "350px",
       nzBodyStyle: this.modalStyle,
