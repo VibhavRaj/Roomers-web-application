@@ -25,4 +25,3 @@ jobs:
         cd ng-dashboard
         npm install
         npm run build
-        npm test
